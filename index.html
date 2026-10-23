@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Slider swip -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>EFood</title>
+  </head>
+  <body>
+    <!-- ===================================== NAVBAR ================================== -->
+    <nav id="nav">
+      <div class="container nav__container">
+        <div class="logo">
+          <h3><span>E</span>Food</h3>
+        </div>
+        <ul id="nav__menu">
+          <li>
+            <a href="#home"><span>Home</span></a>
+          </li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Top cities</a></li>
+          <li><a href="#">Contract</a></li>
+        </ul>
+        <input
+          class="search search__active"
+          placeholder="Ишите што Угодна"
+          type="search"
+        />
+        <div class="icons">
+          <i class="bx bx-cart"></i>
+          <i id="search__icon" class="bx bx-search"></i>
+        </div>
+        <a class="btn" href="#">Sign in</a>
+        <button id="open__menu-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__menu-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+    <!-- ===================================== HEADER ================================== -->
+    <header id="header">
+      <div class="container header__container">
+        <div class="header__text">
+          <h1>Super Fast <span>Food Delivery</span> Service</h1>
+          <p>
+            We provide super fast-delivery service. Let’s use our services right
+            now and get discounts of up to 50%
+          </p>
+          <div class="header__btn">
+            <button class="btn">Explore&nbsp;food</button>
+            <button class="btn-white">Dowload&nbsp;app</button>
+          </div>
+        </div>
+        <div class="header__img">
+          <img src="images/header__kurer.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- ===================================== POPULAR CATEGORY ================================== -->
+    <section class="category">
+      <h2>Our popular Category</h2>
+      <div class="container category__container">
+        <article class="category__foods">
+          <button class="btn">
+            <img src="images/burg.png" alt="" />
+            <p>Burger</p>
+          </button>
+        </article>
+
+        <article class="category__foods">
+          <button class="btn-white">
+            <img src="images/pizz.png" alt="" />
+            <p>Pizza</p>
+          </button>
+        </article>
+
+        <article class="category__foods">
+          <button class="btn-white">
+            <img src="images/sandwich.png" alt="" />
+            <p>Sandwich</p>
+          </button>
+        </article>
+
+        <article class="category__foods">
+          <button class="btn-white">
+            <img src="images/chicen.png" alt="" />
+            <p>Asian&nbsp;food</p>
+          </button>
+        </article>
+
+        <article class="category__foods">
+          <button class="btn-white">
+            <img src="images/set menu.png" alt="" />
+            <p>Setmenu</p>
+          </button>
+        </article>
+      </div>
+    </section>
+    <!-- ===================================== POPULAR CATEGORY BURGERS ================================== -->
+    <section class="categery__burg swiper mySwiper">
+      <div class="container burgs__container swiper-wrapper">
+        <article class="burgers swiper-slide">
+          <img src="images/burger1.svg" alt="" />
+          <h3>Cheeseburger With Salad</h3>
+          <p>$18.00</p>
+          <button class="btn">Add to Cart</button>
+        </article>
+
+        <article class="burgers swiper-slide">
+          <img src="images/burger2.svg" alt="" />
+          <h3>Beef Burger</h3>
+          <p>$15.00</p>
+          <button class="btn">Add to Cart</button>
+        </article>
+
+        <article class="burgers swiper-slide">
+          <img src="images/burger3.svg" alt="" />
+          <h3>Royel Cheeseburger</h3>
+          <p>$16.00</p>
+          <button class="btn">Add to Cart</button>
+        </article>
+
+        <article class="burgers swiper-slide">
+          <img src="images/burger4.svg" alt="" />
+          <h3>Black Gambugrer</h3>
+          <p>$14.00</p>
+          <button class="btn">Add to Cart</button>
+        </article>
+
+        <article class="burgers swiper-slide">
+          <img src="images/burger5.svg" alt="" />
+          <h3>Chicken Burger</h3>
+          <p>$15.00</p>
+          <button class="btn">Add to Cart</button>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <!-- ===================================== GOOD FOOD ================================== -->
+    <section class="kurer__food">
+      <div class="container kurer__container">
+        <img src="images/Kurer.png" alt="" />
+        <div class="kurer__text">
+          <h1>
+            <span>Stay</span> At Home, We Will Provide <span>Good Food</span>
+          </h1>
+          <p>
+            We provide tasty food and superfast delivery at your home. Let’s use
+            our services right now and get discounts of up to 50%.
+          </p>
+          <article class="kurer__portfolio">
+            <img src="images/Timer.png" alt="" />
+            <p>fasted delivery in 30 Minutes</p>
+          </article>
+          <article class="kurer__portfolio">
+            <img src="images/Ellipse.png" alt="" />
+            <p>300+ delivery men</p>
+          </article>
+          <article class="kurer__portfolio">
+            <img src="images/Resturent.png" alt="" />
+            <p>500+ restaurant & cafe shop</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================== FOOD-RESTAURANT ================================== -->
+    <section class="food__restaurant">
+      <h2>Top Food <span>Restaurant</span></h2>
+      <div class="container restaurant__container">
+        <article class="restaurant__pizza">
+          <img src="images/pizza1.svg" alt="" />
+          <div class="restaurant__pizza-text">
+            <h3>Blaze Pizza</h3>
+            <div class="pizza__work-time">
+              <img src="images/clock.png" alt="" />
+              <p>11.00 AM - 10.00 PM</p>
+              <button class="btn">
+                <img src="images/arrow-left.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="restaurant__pizza">
+          <img src="images/pizza2.svg" alt="" />
+          <div class="restaurant__pizza-text">
+            <h3>Pizza Ranch</h3>
+            <div class="pizza__work-time">
+              <img src="images/clock.png" alt="" />
+              <p>11.00 AM - 10.00 PM</p>
+              <button class="btn">
+                <img src="images/arrow-left.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="restaurant__pizza">
+          <img src="images/pizza3.svg" alt="" />
+          <div class="restaurant__pizza-text">
+            <h3>Dion’s Pizza Hut</h3>
+            <div class="pizza__work-time">
+              <img src="images/clock.png" alt="" />
+              <p>11.00 AM - 14.00 PM</p>
+              <button class="btn">
+                <img src="images/arrow-left.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="restaurant__pizza">
+          <img src="images/pizza4.svg" alt="" />
+          <div class="restaurant__pizza-text">
+            <h3>Royel Burger</h3>
+            <div class="pizza__work-time">
+              <img src="images/clock.png" alt="" />
+              <p>11.00 AM - 12.00 PM</p>
+              <button class="btn">
+                <img src="images/arrow-left.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="restaurant__pizza">
+          <img src="images/pizza5.svg" alt="" />
+          <div class="restaurant__pizza-text">
+            <h3>KFC Restaurant</h3>
+            <div class="pizza__work-time">
+              <img src="images/clock.png" alt="" />
+              <p>11.00 AM - 10.00 PM</p>
+              <button class="btn">
+                <img src="images/arrow-left.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="restaurant__pizza">
+          <img src="images/pizza6.svg" alt="" />
+          <div class="restaurant__pizza-text">
+            <h3>Star Food</h3>
+            <div class="pizza__work-time">
+              <img src="images/clock.png" alt="" />
+              <p>11.00 AM - 1.00 PM</p>
+              <button class="btn">
+                <img src="images/arrow-left.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ===================================== DOWLOAD-MOBILE ================================== -->
+    <section class="dowload__mobile">
+      <div class="container mobile__container">
+        <div class="mobile__text">
+          <h1>Download Our <span>Mobile App</span></h1>
+          <p>
+            It's all at your fingertips -- the restaurants you love. Find the
+            right food to suit your mood, and make the first bite last. Go
+            ahead, download app and get 50% discount
+          </p>
+          <div class="dowload__apps">
+            <img src="images/apstore.png" alt="" />
+            <img src="images/googleplay.png" alt="" />
+          </div>
+        </div>
+        <div class="mobiles">
+          <img src="images/mobile_app.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ===================================== SAYING ================================== -->
+    <section class="saying">
+      <h2>What Our Client Are <span>Saying</span></h2>
+      <div class="container saying__container">
+        <img src="images/smile_girl.svg" alt="" />
+        <div class="saying__text">
+          <p>
+            EFood has the most intriguing food order system in the country. UI
+            in both their app and web Is very simple and easy to use, enhancing
+            the UX. Their delivery men are also quite professional and knows the
+            neighborhood well. Till now I never had to guide them to my address
+            for delivery;
+          </p>
+          <h3><span>Anglina Jole</span></h3>
+          <p>Food lover</p>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================== SUBSCRIBERS ================================== -->
+    <section class="subscribe__offer">
+      <div class="container subscribe__container">
+        <h1>Subscribe to get the Latest Offer</h1>
+        <p>
+          Get our daily updates by subscribing to our newspaper, please drop
+          your email below
+        </p>
+        <form action="">
+          <input type="text" placeholder="Enter your email addres" />
+          <button type="submit" class="btn">
+            <img src="images/Frame.png" alt="" />
+            <p>Subscribe</p>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- ===================================== FOOD-RESTAURANT ================================== -->
+    <footer>
+      <div class="container footer__container">
+        <ul class="footer__text">
+          <div class="logo">
+            <h2><span>E</span>Food</h2>
+          </div>
+          <li class="text"><a href="#">Dhaka, Bangladesh</a></li>
+          <li class="text"><a href="#">0943833399</a></li>
+          <li class="text"><a href="#">support@efood.com</a></li>
+          <ul class="for__icons">
+            <li class="icons">
+              <a href="#"><img src="images/facebook.png" alt="" /></a>
+            </li>
+            <li class="icons">
+              <a href="#"><img src="images/twitter.png" alt="" /></a>
+            </li>
+            <li class="icons">
+              <a href="#"><img src="images/instagram.png" alt="" /></a>
+            </li>
+            <li class="icons">
+              <a href="#"><img src="images/pinterset.png" alt="" /></a>
+            </li>
+          </ul>
+        </ul>
+        <ul class="footer__text">
+          <li class="text">Service</li>
+          <li class="text"><a href="#">How it works</a></li>
+          <li class="text"><a href="#">Home delivery</a></li>
+          <li class="text"><a href="#">Prducts</a></li>
+          <li class="text"><a href="#">Menu</a></li>
+        </ul>
+        <ul class="footer__text">
+          <li class="text"></a>Company</li>
+          <li class="text"><a href="#">About Us</a></li>
+          <li class="text"><a href="#">News</a></li>
+          <li class="text"><a href="#">Our trusted partner</a></li>
+          <li class="text"><a href="#">New users FAQ</a></li>
+        </ul>
+        <ul class="footer__text">
+          <li class="text">Supports</li>
+          <li class="text"><a href="#">Help center</a></li>
+          <li class="text"><a href="#">Feedbcak</a></li>
+          <li class="text"><a href="#">Contact us</a></li>
+          <li class="text"><a href="#">Terms conditins</a></li>
+        </ul>
+        <ul class="footer__text">
+          <li class="text">Resources</li>
+          <li class="text"><a href="#">Download app</a></li>
+          <li class="text"><a href="#">Blog</a></li>
+          <li class="text"><a href="#">What’s new</a></li>
+          <li class="text"><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="hr"></div>
+      <div class="container">
+          <div class="recovere__text">
+            <p>© 2021 EFood - All rights reserved.</p>
+            <ul>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Security</a></li>
+              <li><a href="">Terms</a></li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

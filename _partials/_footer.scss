@@ -1,0 +1,68 @@
+footer {
+  margin-top: 8rem;
+
+  .hr {
+    height: 2px;
+    background: $text-color;
+    margin: 1.6rem 0;
+    width: 100%;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6rem;
+
+    .logo {
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      .text {
+        margin: 1rem 0;
+      }
+    }
+    .for__icons {
+      display: flex;
+      gap: 0.2rem;
+      align-items: center;
+
+      .icons {
+        border-radius: 4rem;
+        padding: 0.4rem 0.7rem;
+
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  .recovere__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 0.9rem;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+// ================================= MEDIA FOR MIN WIDTH ================================== //
+@media (max-width: 1024px) {
+  footer {
+    .footer__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+#nav {
+  height: 5rem;
+  display: grid;
+  width: 100%;
+  place-items: center;
+  position: fixed;
+  z-index: 10;
+
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo h3 {
+      font-size: 2rem;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    button {
+      display: none;
+    }
+
+    .search {
+      position: absolute;
+      z-index: 20;
+      width: 30%;
+      background: $secondary-bg-text-color;
+      left: 36%;
+      padding: 1rem;
+      border-radius: 0.7rem;
+    }
+
+    .search__active {
+      display: none;
+    }
+
+    .icons {
+      i {
+        margin-right: 3rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// ================================= MEDIA FOR MIN WIDTH ================================== //
+@media screen and (max-width: 1024px) {
+  nav {
+    .nav__container {
+      button {
+        color: $secondary-bg-text-color;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .btn {
+        position: fixed;
+        bottom: 0;
+        left: 40%;
+      }
+
+      #open__menu-btn {
+        display: block;
+      }
+
+      #close__menu-btn {
+        display: none;
+      }
+
+      #nav__menu {
+        display: none;
+      }
+
+      ul {
+        position: fixed;
+        right: 5%;
+        top: 5rem;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        gap: 0;
+        perspective: 300px;
+
+        li {
+          width: 100%;
+          opacity: 0;
+          transform-origin: top;
+          animation: flipNavit 300ms ease forwards;
+
+          &:nth-child(2) {
+            animation-delay: 200ms;
+          }
+          &:nth-child(3) {
+            animation-delay: 400ms;
+          }
+          &:nth-child(4) {
+            animation-delay: 600ms;
+          }
+          &:nth-child(5) {
+            animation-delay: 800ms;
+          }
+
+          @keyframes flipNavit {
+            0% {
+              transform: rotateX(90deg);
+            }
+            100% {
+              transform: rotateX(0deg);
+              opacity: 1;
+            }
+          }
+          a {
+            color: $white-color;
+            height: 100%;
+            display: block;
+            padding: 2rem 4rem;
+            border-radius: 0;
+            background: linear-gradient(
+              $primary-color-variant,
+              darken($primary-color-variant, 12%)
+            );
+          }
+        }
+      }
+    }
+  }
+}
+

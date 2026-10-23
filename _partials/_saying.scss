@@ -1,0 +1,45 @@
+.saying {
+  h2 {
+    margin-top: 10rem;
+  }
+  .saying__container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 40% 50%;
+    gap: 4rem;
+
+    .saying__text {
+      p {
+        margin: 0 0 5rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+// ================================= MEDIA FOR MIN WIDTH ================================== //
+@media (max-width: 1024px) {
+  .saying {
+    .saying__container {
+      grid-template-columns: 1fr;
+      gap: 0rem;
+
+      .saying__text {
+        
+        p {
+          margin: 0 0 1rem;
+        }
+
+        P{
+          margin-top: .5rem;
+        }
+      }
+    }
+  }
+}
